@@ -1,0 +1,19 @@
+class Program{
+
+int a , b, c;
+
+void dos ( )
+{
+        if ( b > 0 )
+	{
+		c = a / b;
+	}
+	
+	while ( b > 0)
+	{
+		b = b + 1;
+	}
+	
+
+}
+}

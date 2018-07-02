@@ -1,0 +1,15 @@
+class Program {
+
+	int a[10];
+	boolean a,b;
+
+	void init ( )
+	{
+		a = 0;
+	}
+
+	int exp(int a)
+	{
+		return (exp(a));
+	}
+}

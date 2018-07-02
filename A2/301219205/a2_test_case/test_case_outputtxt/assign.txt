@@ -1,0 +1,426 @@
+
+
+InitArray
+-------------
+
+
+PrintNode
+-------------
+label = Field_decl
+id = 0
+
+
+PrintNode
+-------------
+label = int
+id = 1
+
+
+PrintEdge
+-------------
+id1 = 0
+id2 = 1
+
+
+PrintNode
+-------------
+label = x
+id = 2
+
+
+PrintEdge
+-------------
+id1 = 0
+id2 = 2
+
+
+ExtendArray
+-------------
+size = 0
+val = 0
+
+
+PrintNode
+-------------
+label = Inited_field_decl
+id = 3
+
+
+PrintNode
+-------------
+label = int
+id = 4
+
+
+PrintEdge
+-------------
+id1 = 3
+id2 = 4
+
+
+PrintNode
+-------------
+label = c
+id = 5
+
+
+PrintEdge
+-------------
+id1 = 3
+id2 = 5
+
+
+PrintNode
+-------------
+label = 4
+id = 6
+
+
+PrintEdge
+-------------
+id1 = 3
+id2 = 6
+
+
+ExtendArray
+-------------
+size = 1
+val = 3
+
+
+InitArray
+-------------
+
+
+InitArray
+-------------
+
+
+PrintNode
+-------------
+label = Var_decl
+id = 7
+
+
+PrintNode
+-------------
+label = int
+id = 8
+
+
+PrintEdge
+-------------
+id1 = 7
+id2 = 8
+
+
+PrintNode
+-------------
+label = a
+id = 9
+
+
+PrintEdge
+-------------
+id1 = 7
+id2 = 9
+
+
+PrintNode
+-------------
+label = b
+id = 10
+
+
+PrintEdge
+-------------
+id1 = 7
+id2 = 10
+
+
+PrintNode
+-------------
+label = d
+id = 11
+
+
+PrintEdge
+-------------
+id1 = 7
+id2 = 11
+
+
+ExtendArray
+-------------
+size = 0
+val = 7
+
+
+PrintNode
+-------------
+label = Loc
+id = 12
+
+
+PrintNode
+-------------
+label = x
+id = 13
+
+
+PrintEdge
+-------------
+id1 = 12
+id2 = 13
+
+
+PrintNode
+-------------
+label = Const_expr
+id = 14
+
+
+PrintNode
+-------------
+label = 10
+id = 15
+
+
+PrintEdge
+-------------
+id1 = 14
+id2 = 15
+
+
+PrintNode
+-------------
+label = Assign
+id = 16
+
+
+PrintEdge
+-------------
+id1 = 16
+id2 = 12
+
+
+PrintNode
+-------------
+label = =
+id = 17
+
+
+PrintEdge
+-------------
+id1 = 16
+id2 = 17
+
+
+PrintEdge
+-------------
+id1 = 16
+id2 = 14
+
+
+PrintNode
+-------------
+label = Block
+id = 18
+
+
+PrintNode
+-------------
+label = Var_decls
+id = 19
+
+
+PrintEdges
+-------------
+id = 19
+size = 1
+
+
+PrintEdge
+-------------
+id1 = 19
+id2 = 7
+
+
+PrintEdge
+-------------
+id1 = 18
+id2 = 19
+
+
+PrintEdge
+-------------
+id1 = 18
+id2 = 16
+
+
+PrintNode
+-------------
+label = Method_decl
+id = 20
+
+
+PrintNode
+-------------
+label = void
+id = 21
+
+
+PrintEdge
+-------------
+id1 = 20
+id2 = 21
+
+
+PrintNode
+-------------
+label = init
+id = 22
+
+
+PrintEdge
+-------------
+id1 = 20
+id2 = 22
+
+
+PrintEdge
+-------------
+id1 = 20
+id2 = -1
+
+
+PrintEdge
+-------------
+id1 = 20
+id2 = 18
+
+
+ExtendArray
+-------------
+size = 0
+val = 20
+
+
+PrintNode
+-------------
+label = Program
+id = 23
+
+
+PrintNode
+-------------
+label = Field_decls
+id = 24
+
+
+PrintEdges
+-------------
+id = 24
+size = 2
+
+
+PrintEdge
+-------------
+id1 = 24
+id2 = 0
+
+
+PrintEdge
+-------------
+id1 = 24
+id2 = 3
+
+
+PrintEdge
+-------------
+id1 = 23
+id2 = 24
+
+
+PrintNode
+-------------
+label = Method_decls
+id = 25
+
+
+PrintEdges
+-------------
+id = 25
+size = 1
+
+
+PrintEdge
+-------------
+id1 = 25
+id2 = 20
+
+
+PrintEdge
+-------------
+id1 = 23
+id2 = 25
+
+
+PrintGraph
+-------------
+digraph G {
+ordering=out
+0 [label="Field_decl"]
+1 [label="int"]
+0 -> 1
+2 [label="x"]
+0 -> 2
+3 [label="Inited_field_decl"]
+4 [label="int"]
+3 -> 4
+5 [label="c"]
+3 -> 5
+6 [label="4"]
+3 -> 6
+7 [label="Var_decl"]
+8 [label="int"]
+7 -> 8
+9 [label="a"]
+7 -> 9
+10 [label="b"]
+7 -> 10
+11 [label="d"]
+7 -> 11
+12 [label="Loc"]
+13 [label="x"]
+12 -> 13
+14 [label="Const_expr"]
+15 [label="10"]
+14 -> 15
+16 [label="Assign"]
+16 -> 12
+17 [label="="]
+16 -> 17
+16 -> 14
+18 [label="Block"]
+19 [label="Var_decls"]
+19 -> 7
+18 -> 19
+18 -> 16
+20 [label="Method_decl"]
+21 [label="void"]
+20 -> 21
+22 [label="init"]
+20 -> 22
+20 -> 18
+23 [label="Program"]
+24 [label="Field_decls"]
+24 -> 0
+24 -> 3
+23 -> 24
+25 [label="Method_decls"]
+25 -> 20
+23 -> 25
+
+}
+

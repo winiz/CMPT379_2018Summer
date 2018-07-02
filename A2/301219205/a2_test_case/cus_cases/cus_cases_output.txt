@@ -1,0 +1,11 @@
+class Program {}
+=>
+
+{ Program }
+
+class Program {
+void main () {}
+}
+=>
+
+{ Program {MethodDecl {void} {main} {Block}}}

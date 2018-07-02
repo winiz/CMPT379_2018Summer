@@ -1,0 +1,103 @@
+digraph G {
+ordering=out
+0 [label="VarDecl"]
+1 [label="int"]
+0 -> 1
+2 [label="a"]
+0 -> 2
+3 [label="VarDecl"]
+4 [label="int"]
+3 -> 4
+5 [label="b"]
+3 -> 5
+6 [label="VarDecl"]
+7 [label="int"]
+6 -> 7
+8 [label="c"]
+6 -> 8
+9 [label="Loc"]
+10 [label="a"]
+9 -> 10
+11 [label="ConstExpr"]
+12 [label="0"]
+11 -> 12
+13 [label="Assign"]
+13 -> 9
+14 [label="="]
+13 -> 14
+13 -> 11
+15 [label="Loc"]
+16 [label="b"]
+15 -> 16
+17 [label="ConstExpr"]
+18 [label="1"]
+17 -> 18
+19 [label="Assign"]
+19 -> 15
+20 [label="="]
+19 -> 20
+19 -> 17
+21 [label="Loc"]
+22 [label="c"]
+21 -> 22
+23 [label="Loc"]
+24 [label="b"]
+23 -> 24
+25 [label="LocExpr"]
+25 -> 23
+26 [label="Assign"]
+26 -> 21
+27 [label="="]
+26 -> 27
+26 -> 25
+28 [label="Loc"]
+29 [label="b"]
+28 -> 29
+30 [label="Loc"]
+31 [label="a"]
+30 -> 31
+32 [label="LocExpr"]
+32 -> 30
+33 [label="Assign"]
+33 -> 28
+34 [label="="]
+33 -> 34
+33 -> 32
+35 [label="Loc"]
+36 [label="a"]
+35 -> 36
+37 [label="Loc"]
+38 [label="c"]
+37 -> 38
+39 [label="LocExpr"]
+39 -> 37
+40 [label="Assign"]
+40 -> 35
+41 [label="="]
+40 -> 41
+40 -> 39
+33 -> 40
+26 -> 33
+19 -> 26
+13 -> 19
+42 [label="Block"]
+42 -> 0
+0 -> 3
+3 -> 6
+42 -> 13
+43 [label="MethodDecl"]
+44 [label="void"]
+43 -> 44
+45 [label="main"]
+43 -> 45
+43 -> 42
+46 [label="MethodDecl"]
+47 [label="void"]
+46 -> 47
+48 [label="foo"]
+46 -> 48
+49 [label="Program"]
+49 -> 43
+43 -> 46
+
+}

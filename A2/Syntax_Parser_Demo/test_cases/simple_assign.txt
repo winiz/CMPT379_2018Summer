@@ -1,0 +1,7 @@
+class Program {
+	int a, b;
+    void call ( )
+    {
+        a = a / b;
+    }
+}

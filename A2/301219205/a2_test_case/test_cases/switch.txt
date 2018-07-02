@@ -1,0 +1,17 @@
+class Program {
+
+int a,b;
+
+int dos ( )
+{
+	switch a+b {
+		case 5:
+			b = 3;
+			exp(b);
+			callout("printf", a + b);
+		case 6:
+			b = 4+3;
+			a = 5+4*2;
+	}
+}
+}

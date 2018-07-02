@@ -1,0 +1,18 @@
+class Program {}
+=>
+
+{ Program }
+
+class Program {
+void main () {}
+}
+=>
+
+{ Program {MethodDecl {void} {main} {Block}}}
+
+
+
+grun Cmpt379Compiler prog ./a2_test_case/test_cases/assign.txt > ./a2_test_case/test_case_outputtxt/test.txt
+
+dot -Tpdf test.dot > test.pdf
+

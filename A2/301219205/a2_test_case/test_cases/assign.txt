@@ -1,0 +1,11 @@
+class Program {
+
+	int x;
+	int c = 4;
+void init ( )
+{
+	int a,b,d;
+	x = 10;
+
+}
+}
